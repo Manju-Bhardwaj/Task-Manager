@@ -1,0 +1,122 @@
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.5s;
+  }
+  
+  .sidebar-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar-links li {
+    margin-bottom: 1rem;
+  }
+  
+  .sidebar-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    /* font-weight: bold; */
+    font-size: 1.2rem;
+  }
+  
+  .sidebar-links a:hover {
+    background-color: #444;
+  }
+  
+  .sidebar-links a.active {
+    background-color: #555;
+  }
+  
+  .nav-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .nav-options {
+    display: flex;
+    align-items: center;
+  }
+  
+  .notification-bell {
+    margin-right: 1rem;
+    position: relative;
+  }
+  
+  .notification-bell .fas {
+    font-size: 1.5rem;
+  }
+  
+  .notification-count {
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 0.2rem 0.5rem;
+    border-radius: 50%;
+  }
+  
+  .sign-out button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  
+  .sign-out button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive styles */
+  
+  @media (max-width: 768px) {
+    .sidebar {
+      width: 100px;
+    }
+    .sidebar-links a {
+      font-size: 0.8rem;
+    }
+    .nav-bar {
+      padding: 0.5rem;
+    }
+    .nav-title {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sidebar {
+      width: 50px;
+    }
+    .sidebar-links a {
+      font-size: 0.6rem;
+    }
+    .nav-bar {
+      padding: 0.2rem;
+    }
+    .nav-title {
+      font-size: 0.8rem;
+    }
+  }

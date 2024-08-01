@@ -1,9 +1,13 @@
 import React from 'react'
+import Sidebar from './Sidebar'
 
 function Tasks() {
   return (
     <div>
-    Tasks
+      <div>
+        <Sidebar/>
+      </div>
+    <div className='text-center mt-5'>Tasks assigned to user will be displayed here!</div>
     </div>
   )
 }

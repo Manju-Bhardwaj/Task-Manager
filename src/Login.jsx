@@ -2,7 +2,7 @@ import React ,{useState} from 'react'
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 
-import Sidebar from './components/sidebar';
+// import Sidebar from './components/sidebar';
 const Login=()=> {
 const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -46,8 +46,8 @@ const [email, setEmail] = useState('');
             <input type='password' value={password} placeholder='Enter Password' name='password' onChange={(e)=> setPassword(e.target.value)} required  className='form-control rounded-0'></input>
             
         </div>
-        <Link to="/sidebar" type='submit' className='btn btn-dark w-100'>Login</Link>
-        <p></p>
+        <Link to="/dashboard" type='submit' className='btn btn-dark w-100'>Login</Link>
+        <p className='mt-2'>Don't have any account?</p>
         <Link to="/signup" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none '>Create Account</Link>
     </form>
     {error && <p>{error}</p>}

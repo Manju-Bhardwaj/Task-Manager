@@ -41,8 +41,8 @@ function Signup() {
             <label htmlFor='password'><strong>Confirm Password</strong></label>
             <input type='password' placeholder='Confirm Password' className='form-control rounded-0'></input>
         </div> */}
-        <button type='submit' className='btn btn-dark w-100'>Sign up</button>
-        <p>Already have an account?</p>
+        <Link to='/sidebar' type='submit' className='btn btn-dark w-100'>Sign up</Link>
+        <p className='mt-2'>Already have an account?</p>
         <Link to="/" className='btn btn-default border w-100 bg-light rounded-0 text-decoration-none '>Login</Link>
     </form>
     </div>
